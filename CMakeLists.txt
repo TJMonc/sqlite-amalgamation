@@ -5,6 +5,6 @@ project(sqlite3)
 set(BUILD_SHARED_LIBS ON)
 file(GLOB SOURCES "src/*.c")
 
-include(${CMAKE_SOURCE_DIR}/include)
+include(${CMAKE_SOURCE_DIR}/include/sqlite3.h)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 add_library(${PROJECT_NAME} ${SOURCES})
